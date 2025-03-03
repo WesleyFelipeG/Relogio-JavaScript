@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "SUSE", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: url("./../assets/background.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column; /* Adiciona os fusos horários um abaixo do outro */
+    gap: 20px; /* Espaço entre os fusos horários */
+}
+
+/* Adiciona um espaço entre os fusos horários */
+.relogio {
+    background: rgba(5, 5, 5, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    width: 550px;
+    border-radius: 5px;
+    box-shadow: 0px 8px 10px rgba(0,0,0,.7);
+    flex-direction: row; /* Manter as divisões internas (horas, minutos, segundos) em linha */
+}
+
+/* Cada divisão dentro de um relógio (horas, minutos, segundos) */
+.relogio div {
+    background: rgba(5, 5, 5, 0.9);
+    height: 170px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    flex-direction: column;
+    border-radius: 7px;
+    letter-spacing: 3px;
+}
+
+.relogio span {
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.relogio p {
+    font-size: 16px;
+}
